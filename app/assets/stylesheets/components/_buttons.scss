@@ -1,0 +1,15 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  background-color: green;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

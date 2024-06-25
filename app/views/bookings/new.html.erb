@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <%= simple_form_for @booking do |f| %>
+    <%= f.input :start_date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+    <%= f.input :end_date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+    <%= f.hidden_field "travel_id", :value => @travel.id %>
+    <%= f.hidden_field "user_id", :value => @user.id %>
+    <%= f.submit "Confirm booking", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

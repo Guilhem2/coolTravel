@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <%= "#{@travel.name}" %>
+  </div>
+  <div class="row">
+    <%= "#{@travel.description}" %>
+  </div>
+  <div class="row">
+    <%= "#{@travel.price}€" %>
+  </div>
+  <div class="row">
+    <div class="btn">
+      <%= link_to "Book", new_booking_path(@travel.id) %>
+    </div>
+  </div>
+</div>

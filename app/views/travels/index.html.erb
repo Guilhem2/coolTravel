@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Here are today's available travels</h1>
+  <div class="row">
+    <% @travels.each do |travel| %>
+      <div>
+        <%= link_to "#{travel.name} / ", travel_path(travel) %>
+        <%= "#{travel.description} / " %>
+        <%= "#{travel.price}€ / " %>
+        <%= link_to "Write review", new_travel_review_path(travel.id) %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <%= " Starts on #{@booking.start_date}" %>
+  </div>
+  <div class="row">
+    <%= " Ends on #{@booking.end_date}" %>
+  </div>
+  <div class="row">
+    <%= " Destination: #{@booking.travel.name}" %>
+  </div>
+  <div class="row">
+    <%= " Price: #{@booking.travel.price}" %>
+  </div>
+</div>

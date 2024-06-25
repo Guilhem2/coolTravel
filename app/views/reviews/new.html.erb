@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <%= simple_form_for [@travel, @review] do |f| %>
+    <%= f.input :rating, :collection => 1..5 %>
+    <%= f.input :comment %>
+    <%= f.hidden_field "user_id", :value => @user.id %>
+    <%= f.submit "Post review", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
